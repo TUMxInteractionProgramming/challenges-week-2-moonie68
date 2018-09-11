@@ -1,7 +1,6 @@
 <!DOCTYPE html >
 <!-- #1 #structure #document -->
-<html>
-    <head>
+<html><head>
 
     <!-- #1 #structure #title -->
     <title>chatter|app</title>
@@ -75,12 +74,17 @@
             font-size: larger;
             font-style: normal;
         }
-
+li {
+background-color: white;
+}
     </style>
 
 </head>
 
 <body>
+
+
+<fieldset style="border: 0;">
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
 <h1>chatter|app</h1>
@@ -97,10 +101,17 @@
 <button>trending</button>
 <button>favorites</button>
 
+</fieldset>
+
+
+
 
 <!-- chat area -->
 <!-- #1 #chat #name -->
-<h1>#Mars
+
+   
+<fieldset style=" border: 0; width: 70%; height: 70%;">
+<h1 style="width: 80%">#Mars
     <!-- #1 #chat #location is wrapped in small tag-->
     <small>by
         <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -108,6 +119,7 @@
     </small>
 </h1>
 
+<div style="width: 80%; display:float:right;">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -120,7 +132,6 @@
 <p>I would Love To live on Mars. Anyone else?</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -133,7 +144,6 @@
 <p>No, Not me.I don't like the radiation.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -197,5 +207,7 @@
 <p>I prefer ULA.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-</body>
-</html>
+        </div>
+</fieldset>
+
+</body></html>
